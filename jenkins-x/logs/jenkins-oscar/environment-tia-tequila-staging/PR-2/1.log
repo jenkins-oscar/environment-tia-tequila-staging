@@ -1,0 +1,40 @@
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8hj9t[0m
+{"level":"warn","ts":1586740791.7107635,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586740791.7114043,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-8gn2s[0m
+{"level":"warn","ts":1586740793.0445538,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586740793.0461075,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jenkins-oscar-environment-tia-t-mcttt-6x7w4[0m
+{"level":"warn","ts":1586740796.1917272,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586740796.768086,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/jenkins-oscar/environment-tia-tequila-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:121a99ce453e7603e3e233f839c0ff784de3a74b,2:ab57cf52e226226f5a9e9115a47fda85536d3c90
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow ab57cf52e226226f5a9e9115a47fda85536d3c90: 121a99ce453e7603e3e233f839c0ff784de3a74b:
+DEBUG: ran git fetch --unshallow origin ab57cf52e226226f5a9e9115a47fda85536d3c90: 121a99ce453e7603e3e233f839c0ff784de3a74b: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard 121a99ce453e7603e3e233f839c0ff784de3a74b
+DEBUG: ran git reset --hard 121a99ce453e7603e3e233f839c0ff784de3a74b in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge ab57cf52e226226f5a9e9115a47fda85536d3c90
+DEBUG: ran git merge ab57cf52e226226f5a9e9115a47fda85536d3c90 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 121a99ce453e7603e3e233f839c0ff784de3a74b..HEAD
+Merged SHA ab57cf52e226226f5a9e9115a47fda85536d3c90 with commit message 'chore: Promote startbootstrap-one-page-wonder to version 0.0.2' into base branch master
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-mcttt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
