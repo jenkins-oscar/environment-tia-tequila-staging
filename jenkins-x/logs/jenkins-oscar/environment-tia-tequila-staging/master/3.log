@@ -1,0 +1,39 @@
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kbhzf[0m
+{"level":"warn","ts":1586740882.2943685,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586740882.2976458,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-h857z[0m
+{"level":"warn","ts":1586740883.2530293,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586740883.2546544,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jenkins-oscar-environment-tia-t-w8jst-5gjsh[0m
+{"level":"warn","ts":1586740889.3297992,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586740889.865101,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/jenkins-oscar/environment-tia-tequila-staging.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:079e14132d9a0efeb1fc7361f614a5130b4df7a0
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-w8jst-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 3
+creating the lock configmap **-lock-**-staging
+lock configmap **-lock-**-staging created
+Ignoring templates/.gitignore
+Ignoring templates/wildcardcert-secret.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+release.jenkins.io "startbootstrap-one-page-wonder-0.0.1" deleted
+cleaning the lock configmap **-lock-**-staging
