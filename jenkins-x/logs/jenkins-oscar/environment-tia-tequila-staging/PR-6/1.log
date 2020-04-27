@@ -1,0 +1,40 @@
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-xl5b5[0m
+{"level":"warn","ts":1588024686.9259722,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588024686.926566,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-gw47k[0m
+{"level":"warn","ts":1588024688.3865762,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588024688.387986,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jenkins-oscar-environment-tia-t-v9ntq-2l66l[0m
+{"level":"warn","ts":1588024692.656626,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588024693.2280953,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/jenkins-oscar/environment-tia-tequila-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:f1e1d04a36583615789ad08eb2eac60e5d9d611d,6:8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec: f1e1d04a36583615789ad08eb2eac60e5d9d611d:
+DEBUG: ran git fetch --unshallow origin 8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec: f1e1d04a36583615789ad08eb2eac60e5d9d611d: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard f1e1d04a36583615789ad08eb2eac60e5d9d611d
+DEBUG: ran git reset --hard f1e1d04a36583615789ad08eb2eac60e5d9d611d in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec
+DEBUG: ran git merge 8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e f1e1d04a36583615789ad08eb2eac60e5d9d611d..HEAD
+Merged SHA 8a1ebcbbe8c10c8de0e8ec84eb3945a62f2607ec with commit message 'chore: Promote skiapp to version 0.0.83' into base branch master
+
+Showing logs for build [32mjenkins-oscar-environment-tia-t-v9ntq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
