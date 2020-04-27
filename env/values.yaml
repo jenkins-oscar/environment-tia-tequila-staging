@@ -15,9 +15,9 @@ expose:
   config:
     domain: cjxd.sharepointoscar.com
     exposer: Ingress
-    http: "false"
+    http: "true"
     tlsSecretName: tls-cjxd-sharepointoscar-com-p
-    tlsacme: "true"
+    tlsacme: "false"
     urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
   production: true
 jenkins:
